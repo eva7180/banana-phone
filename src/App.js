@@ -59,7 +59,7 @@ class App extends React.Component {
             messages: [] 
         });
         this.currentUser.subscribeToRoom({
-            roomId: roomId.toString(),
+            roomId: roomId,
             hooks: {
                 onMessage: message => {
                     this.setState({
