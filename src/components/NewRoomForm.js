@@ -36,7 +36,7 @@ class NewRoomForm extends React.Component {
                         onChange={this.handleChange}
                         value={this.state.roomName}
                         type="text" 
-                        placeholder="Create new Room" 
+                        placeholder="Create new room" 
                         required />
                     <button id="create-room-btn" type="submit">+</button>
             </form>

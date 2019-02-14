@@ -1,9 +1,9 @@
 :root {
-    --main-color: #5ea3d0;
+    --main-color: #b3c2bf;
     --secondary-color: white;
-    --main-text-color: #3e5869;
-    --secondary-text-color: #b0c7d6;
-    --send-message-form: #F5F5F5;
+    --main-text-color: #3b3a36;
+    --secondary-text-color: #c0dfd9;
+    --send-message-form: #e9ece5;
 }
 
 html, body {
@@ -22,15 +22,15 @@ html, body {
 .app {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
     grid-template-areas: 
-        "r m m m m m"
-        "r m m m m m"
-        "r m m m m m"
-        "r m m m m m"
-        "r m m m m m"
-        "n f f f f f";
+        "m m m m m r r"
+        "m m m m m r r"
+        "m m m m m r r"
+        "m m m m m r r"
+        "m m m m m r r"
+        "f f f f f n n";
 }
 
 .new-room-form {
@@ -82,6 +82,7 @@ html, body {
 
 .rooms-list .room.active a {
     color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .new-room-form {
@@ -159,6 +160,7 @@ html, body {
     height: 100%;
     font-size: 34px;
     font-weight: 300;
+    color: var(--main-text-color);
 }
 
 .send-message-form {

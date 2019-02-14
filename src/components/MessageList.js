@@ -21,7 +21,7 @@ class MessageList extends React.Component {
             return (
                 <div className="message-list">
                     <div className="join-room">
-                        &larr; Join or create a room to chat!
+                        Join or create a room to chat! &rarr; 
                     </div>
                 </div>
             )
